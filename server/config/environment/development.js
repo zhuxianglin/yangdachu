@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://192.168.199.83/zxl-dev'
+    uri: 'mongodb://23.106.140.240/zxl-dev'
   },
 
   seedDB: true
