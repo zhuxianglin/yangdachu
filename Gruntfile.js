@@ -367,18 +367,18 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.client %>',
         dest: '.tmp/',
         src: ['{app,components}/**/*.css']
+      },
+      img : {
+         files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.client %>',
+          dest: '<%= yeoman.dist %>/public',
+          src: [
+            'assets/images/**/*'
+          ]
+        }]
       }
-      // img : {
-      //    files: [{
-      //     expand: true,
-      //     dot: true,
-      //     cwd: '<%= yeoman.client %>',
-      //     dest: '<%= yeoman.dist %>/public',
-      //     src: [
-      //       'assets/images/**/*'
-      //     ]
-      //   }]
-      // }
     },
 
     buildcontrol: {
@@ -618,7 +618,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'rev',
-    'usemin'
+    'usemin',
+    'copy:img'
   ]);
 
   grunt.registerTask('default', [
