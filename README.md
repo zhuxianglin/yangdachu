@@ -1,4 +1,4 @@
-## 添加
+## 添加...
 
 
 npm isntall && bower install 
