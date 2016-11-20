@@ -10,7 +10,7 @@ angular.module('zxlApp', [
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/login');
+      .otherwise('/');
 
     $locationProvider.html5Mode(true);
   });

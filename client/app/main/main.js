@@ -4,7 +4,7 @@ angular.module('zxlApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'app/main/home/home.html',
         controller: 'HomeCtrl'
       })

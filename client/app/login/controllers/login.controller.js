@@ -3,7 +3,7 @@
 
 	angular.module('zxlApp')
 		.controller('LoginCtrl', function($scope, $http, socket) {
-			console.log("LoginCtrl --");
+			console.log("LoginCtrl --------");
 			$scope.datas = [];
 			
 			
