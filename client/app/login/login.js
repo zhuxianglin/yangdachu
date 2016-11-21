@@ -4,7 +4,7 @@ angular.module('zxlApp')
     .config(function($stateProvider) {
         $stateProvider
             .state('login', {
-                url: '/login',
+                url: '/',
                 templateUrl: 'app/login/templates/login.html',
                 controller: 'LoginCtrl'
             });
