@@ -2,23 +2,23 @@
 	'use strict';
 
 	angular.module('zxlApp')
-		.service('LoginSer', function($http, socket, $q) {
-		
+		.service('LoginSer', function($http, $q) {
+
 		console.log("ser  ---------");
 		this.createTal = function(data) {
 			var deffer = $q.defer();
 			$http({
 				method: 'post',
     			url: '/api/login',
-    			params: {name:'zxl11'}
+    			params: data
 			}).success(function(successData) {
 				deffer.resolve(successData);
 			}).error(function(errorData) {
-				deffer.resolve(successData);
+				deffer.resolve(errorData);
 			})
 
 			return deffer.promise;
-		};			
-			
+		};
+
 		});
 })();

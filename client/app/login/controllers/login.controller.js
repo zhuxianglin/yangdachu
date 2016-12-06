@@ -7,8 +7,11 @@
             var data = {
                 'name': 'zxl'
             };
-            LoginSer.createTal(data).then(function(_d) {
+
+            $scope.test = function () {
+              LoginSer.createTal(data).then(function(_d) {
                 $scope.datas = _d;
-            });
+              });
+            }
         });
 })();
