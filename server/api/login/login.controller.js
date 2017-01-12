@@ -23,9 +23,9 @@ exports.index = function(req, res) {
 //数据存入数据库
 exports.create = function(req, res) {
   Login.create(req.query, function (err, datas) {
-    console.log("datas ---",datas);
+    // console.log("datas ---",datas);
     if(err) { return handleError(res, err); }
-    console.log("success --->datas ", datas);
+    // console.log("success --->datas ", datas);
     return res.status(200).json(datas);
 
   });
