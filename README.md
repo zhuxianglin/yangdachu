@@ -1,6 +1,6 @@
 ## 添加...
 
 
-npm isntall && bower install 
+npm install && bower install 
 
 grunt serve
